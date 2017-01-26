@@ -1,13 +1,12 @@
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import Router from './pages';
-
+import Root from 'layouts/Root';
 
 const render = () => {
   ReactDOM.render(
     <AppContainer>
-      <Router />
+      <Root />
     </AppContainer>,
     document.getElementById('root')
   );
@@ -16,5 +15,5 @@ const render = () => {
 render();
 
 if (module.hot) {
-  module.hot.accept('./pages', render);
+  module.hot.accept('layouts/Root', render);
 }

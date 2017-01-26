@@ -1,17 +1,14 @@
 import path from 'path';
 import webpack from 'webpack';
 
-const libs = [
+const vendor = [
   'react',
   'react-dom',
-  'recompose',
-  'react-router'
+  'recompose'
 ];
 
 export default () => ({
-  entry: {
-    vendor: libs
-  },
+  entry: { vendor },
   devtool: '#source-map',
   output: {
     path: path.join(process.cwd(), 'node_modules/dll'),

@@ -22,12 +22,7 @@ const rules = {
   globalCss: {
     use: [
       'style-loader',
-      {
-        loader: 'css-loader',
-        options: {
-          importLoaders: 1
-        }
-      }
+      'css-loader'
     ]
   },
 

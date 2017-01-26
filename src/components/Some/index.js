@@ -1,3 +1,3 @@
 export default () => (
-  <h1>Pse Pse 1</h1>
+  <h1>Pse Pse </h1>
 );

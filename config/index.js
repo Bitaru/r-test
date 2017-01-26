@@ -71,21 +71,6 @@ export default (env) => {
         }
       }),
 
-      new webpack.LoaderOptionsPlugin({
-        test: /\.css$/,
-        debug: true,
-        options: {
-          postcss: () => [
-            require('postcss-import'),
-            require('autoprefixer'),
-            require('postcss-focus'),
-            require('postcss-nested'),
-            require('postcss-color-function'),
-            require('postcss-simple-vars')
-          ]
-        }
-      }),
-
       new webpack.DllReferencePlugin({
         context: path.join(process.cwd()),
         manifest: require(path.join(process.cwd(), 'node_modules/dll/vendor-manifest.json'))

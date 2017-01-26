@@ -12,7 +12,9 @@
     "react/react-in-jsx-scope": 0,
     "react/jsx-filename-extension": 0,
     "import/no-extraneous-dependencies": 0,
-    "jsx-quotes": [1, "prefer-single"],
-    "import/external-module-folders": [1, ["node_modules", "src"]]
+    "jsx-quotes": [1, "prefer-single"]
+  },
+  "settings": {
+    "import/resolver": "webpack"
   }
 }
