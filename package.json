@@ -1,0 +1,67 @@
+{
+  "name": "r-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dashboard -- ./node_modules/.bin/webpack-dev-server --env.development",
+    "build": "node ./node_modules/.bin/webpack --env.production",
+    "dll": "node ./node_modules/.bin/webpack --env.dll",
+    "postinstall": "npm run dll",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bitaru/r-test.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bitaru/r-test/issues"
+  },
+  "homepage": "https://github.com/Bitaru/r-test#readme",
+  "devDependencies": {
+    "add-asset-html-webpack-plugin": "^1.0.2",
+    "autoprefixer": "^6.7.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react": "^1.0.0",
+    "babel-plugin-react-require": "^3.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "html-webpack-plugin": "^2.26.0",
+    "image-webpack-loader": "^3.1.0",
+    "postcss-color-function": "^2.0.1",
+    "postcss-focus": "^1.0.0",
+    "postcss-import": "^9.1.0",
+    "postcss-load": "^0.1.6",
+    "postcss-loader": "^1.2.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0",
+    "webpack-dashboard": "^0.2.1",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "normalize.css": "^5.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "recompose": "^0.21.2"
+  }
+}

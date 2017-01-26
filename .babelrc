@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+    "add-module-exports"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
