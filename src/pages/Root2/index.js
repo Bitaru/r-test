@@ -5,6 +5,6 @@ import './styles.global.css';
 export default () => (
   <div>
     <Some />
-    awfawffawfawf
+    11
   </div>
 );

@@ -17,6 +17,12 @@ export default (env) => {
 
   return {
     ...config,
+    resolve: {
+      modules: [
+        path.join(process.cwd(), 'src'),
+        'node_modules'
+      ]
+    },
     entry: [
       ...config.entry,
       './src/index.js'

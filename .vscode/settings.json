@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "path-intellisense.extensionOnImport": true,
+  "path-intellisense.mappings": {
+    "components": "${workspaceRoot}/src/components",
+    "pages": "${workspaceRoot}/src/pages",
+    "libs": "${workspaceRoot}/src/lins"
+  }
+}

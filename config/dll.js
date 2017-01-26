@@ -5,7 +5,6 @@ const libs = [
   'react',
   'react-dom',
   'recompose',
-  'lodash',
   'react-router'
 ];
 
