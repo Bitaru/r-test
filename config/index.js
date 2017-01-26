@@ -69,8 +69,8 @@ export default (env) => {
         test: /\.css$/,
         debug: true,
         options: {
-          postcss: ctx => [
-            require('postcss-import')({ addDependencyTo: ctx.webpack }),
+          postcss: () => [
+            require('postcss-import'),
             require('autoprefixer'),
             require('postcss-focus'),
             require('postcss-nested'),

@@ -1,19 +1,20 @@
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import Root from './components/Root';
+import Router from './pages';
 
-const render = (Component) => {
+
+const render = () => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <Router />
     </AppContainer>,
     document.getElementById('root')
   );
 };
 
-render(Root);
+render();
 
 if (module.hot) {
-  module.hot.accept('./components/Root', () => render(Root));
+  module.hot.accept('./pages', render);
 }

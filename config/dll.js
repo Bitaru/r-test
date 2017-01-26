@@ -5,7 +5,8 @@ const libs = [
   'react',
   'react-dom',
   'recompose',
-  'lodash'
+  'lodash',
+  'react-router'
 ];
 
 export default () => ({
