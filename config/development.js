@@ -39,7 +39,8 @@ const rules = {
           babelrc: false,
           plugins: [
             'react-hot-loader/babel',
-            'react-require'
+            'react-require',
+            'syntax-dynamic-import'
           ],
           presets: [
             ['es2015', { modules: false }],
