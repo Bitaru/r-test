@@ -1,6 +1,7 @@
 const { compact } = require('lodash');
 
 module.exports = ctx => ({
+  parser: require('postcss-scss'),
   plugins: compact([
     require('postcss-smart-import'),
     require('postcss-focus'),

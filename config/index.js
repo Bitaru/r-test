@@ -8,6 +8,7 @@ const environments = ['development', 'production', 'test', 'dll'];
 const getEnvironment = env =>
   env && environments.find(e => !!env[e]) || process.env.NODE_ENV || 'development';
 
+
 export default (env) => {
   const environment = getEnvironment(env);
   const environmentConfig = require(`./${environment}.js`); // eslint-disable-line
